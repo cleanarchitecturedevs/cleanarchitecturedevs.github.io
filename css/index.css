@@ -1,0 +1,118 @@
+body {
+    background: var(--body-background);
+}
+
+header {
+    background: var(--header-background);
+    border-bottom: 1px solid var(--main-border-color);
+    -webkit-box-shadow: 0px 2px 8px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 8px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 8px -3px rgba(0,0,0,0.75);
+    color: var(--text-color-header);
+    font-family: 'Roboto Condensed', serif;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    margin-bottom: 1rem;
+}
+
+main {
+    background: var(--main-background);
+    border-radius: 4px;
+    -webkit-box-shadow: 2px 2px 8px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 8px -3px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 8px -3px rgba(0,0,0,0.75);
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Roboto Condensed';
+    letter-spacing: .021rem;
+    line-height: 1.5rem;
+    padding: 1rem 0 2rem 1rem;
+}
+
+.social-media {
+    background: black;
+    border-radius: 125px;
+    text-align: center;
+    padding: .4rem;
+    box-sizing: border-box;
+    display: inline-table;
+    float: right;
+}
+
+.uml {
+    width: 100%;
+}
+
+h1,h2, h3 {
+    font-family: 'Roboto Condensed';
+    font-weight: bold;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    border-left: 5px solid #757575;
+    color: var(--text-color-header);
+    display: block;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    border-left: 5px solid #757575;
+    color: var(--text-color-header);
+    display: block;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+p, a {
+    color: var(--text-color);
+    font-family: 'Roboto Condensed';
+    letter-spacing: .021rem;
+    line-height: 1.5rem;
+    padding: 0 1rem 1rem 1rem;
+}
+
+ul {
+    list-style-type: disc;
+    padding: 0 0 1rem 0;
+}
+
+li {
+    margin-left: 2rem;
+}
+
+li a {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    margin: 1rem;
+}
+
+th {
+    border-bottom: 1px solid black;
+    font-family: 'Roboto Condensed';
+    font-weight: bold;
+    letter-spacing: .021rem;
+    text-align: left;
+    padding: 1rem 1rem 1rem 0;
+}
+
+td {
+    font-family: 'Roboto Condensed';
+    letter-spacing: .021rem;
+    padding: 1rem 1rem 0 0;
+}
+
+td:first-child {
+    font-weight: bold;
+}

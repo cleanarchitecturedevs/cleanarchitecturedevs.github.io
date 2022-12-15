@@ -1,0 +1,12 @@
+:root {
+    --body-background: #222;
+    --header-background: #232323;
+    --main-background: #333333;
+    --main-border-color: transparent;
+    --text-color-header: #faebd7;
+    --text-color: #9b9b9b;
+}
+
+.hamburger {
+    stroke: #faebd7;
+}
