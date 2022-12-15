@@ -93,12 +93,8 @@
     </table>
     <img src="img/uml.svg" alt="clean architecture" class="uml"/>
 
-    <h2>Clean Architecture Artifacts</h2>
-    <p>There are many artifacts in Clean Architecture. It is important to understand their role and why they are
-        there.</p>
-
     <h3>Controller</h3>
-    <p>The Controller takes the HTTP Request and transforms it into the UseCase Request.</p>
+    <p>The Controller takes the HTTP Request and transforms it into the UseCase Request. In a Queue based environment, this would be the listener receiving the message from the Queue.</p>
 
     <h3>UseCase Request</h3>
     <p>The UseCase Request is a data structure without any logic. It contains request data as a plain DTO (Data Transfer
@@ -109,13 +105,16 @@
         from the Repository Interface, let the Entity execute the business rules, and save the Entities in their new
         states via the Repository Interface.</p>
 
+    <h3>Entities</h3>
+    <p>The Business Objects. Contain all the Enterprise Business Rules. When you like to do Domain Driven Design, this is the
+        Domain Model (Aggregate Root, with Entities and Value Objects).</p>
+
     <h3>Repository Interface</h3>
     <p>Defines the interface on how to access and save data to the Data Source. Allows separation of frameworks and your
         application.</p>
 
-    <h3>Entities</h3>
-    <p>The Business Objects. Contain all the Business Rules. When you like to do Domain Driven Design, this is the
-        Domain Model.</p>
+    <h3>Response</h3>
+    <p>The Response has all the response data. Its a basic data structure without any business logic.</p>
 
     <h3>Repository Plugin</h3>
     <p>Database Access Framework Implementation of your choice. Implements all the Repository Interfaces from your
@@ -124,6 +123,9 @@
     <h3>Database Model</h3>
     <p>The Database Model is the Data Access Object that represents the structure of the database. No business rules in
         here.</p>
+
+    <h3>Presenter Implementation</h3>
+    <p>Takes the Response and formats it to the desired form (ViewModel). For instance, if you have a DateTime object in your Response, the presenter would format the date into the desired string.</p>
 </main>
 <footer>© 2022 Christian Bergau
     <a href="https://www.linkedin.com/in/christian-bergau-56b35883" class="social-media">
