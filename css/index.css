@@ -42,6 +42,7 @@ footer {
     padding: .4rem;
     box-sizing: border-box;
     display: inline-table;
+    width: 36px;
 }
 
 .uml {
