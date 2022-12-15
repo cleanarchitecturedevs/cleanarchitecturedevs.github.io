@@ -83,7 +83,9 @@
         </tr>
         <tr>
             <td>Application</td>
-            <td>Contains the UseCases, Domain Model and the interfaces for the UseCase, Presenter and Repository. The "Application" does not know anything about WebAPI or Persistence details.</td>
+            <td>Contains the UseCases, Domain Model and the interfaces for the UseCase, Presenter and Repository. The "Application" does not know anything about WebAPI or Persistence details.
+            <p class="important">Note: The Application Dependencies never point outwards its boundaries. The WebAPI and the Persistance Implementation are Plugins for the Application!</p>
+            </td>
         </tr>
         <tr>
             <td>Persistence Implementation</td>

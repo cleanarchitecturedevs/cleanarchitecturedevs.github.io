@@ -26,6 +26,11 @@ main {
     margin: 0 auto;
 }
 
+p.important {
+    color: red;
+    padding: 1rem 0;
+}
+
 footer {
     max-width: 800px;
     margin: 0 auto;
