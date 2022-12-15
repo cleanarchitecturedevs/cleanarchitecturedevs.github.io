@@ -9,9 +9,9 @@ body {
 header {
     background: var(--header-background);
     border-bottom: 1px solid var(--main-border-color);
-    -webkit-box-shadow: 0px 2px 8px -3px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 2px 8px -3px rgba(0,0,0,0.75);
-    box-shadow: 0px 2px 8px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0 2px 8px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 2px 8px -3px rgba(0,0,0,0.75);
+    box-shadow: 0 2px 8px -3px rgba(0,0,0,0.75);
     color: var(--text-color-header);
     font-family: 'Roboto Condensed', serif;
     font-size: 1.5rem;
@@ -28,6 +28,22 @@ main {
     padding: 1rem;
     max-width: 800px;
     margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        margin-bottom: 0;
+    }
+
+    main {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        border-radius: 0;
+    }
 }
 
 p.important {
