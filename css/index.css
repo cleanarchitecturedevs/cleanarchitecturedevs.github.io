@@ -31,7 +31,8 @@ main {
 }
 
 p.important {
-    color: red;
+    color: #a20000;
+    font-weight: bold;
     line-height: var(--line-height);
     padding: 1rem 0 0 0;
 }
